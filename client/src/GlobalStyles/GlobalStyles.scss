@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: rgb(142, 142, 142);
+    }
+
+    span {
+        color: white;
+
+        &:hover {
+            color: bisque;
+        }
+    }
+}

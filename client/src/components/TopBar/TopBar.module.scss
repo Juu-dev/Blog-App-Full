@@ -1,0 +1,129 @@
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    font: {
+        family: "Josenfin Sans", sans-serif;
+    }
+
+    .topLeft,
+    .topRight {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topLeft {
+        .topIcon {
+            font-size: 25px;
+            margin-right: 10px;
+            color: #444;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .topIconFace {
+            color: #1278f3;
+        }
+
+        .topIconInsta {
+            $blue: #3051f1;
+            $purple: #c92bb7;
+            $red: #f73344;
+            $orange: #fa8e37;
+            $yellow: #fcdf8f;
+            $yellow_to: #fbd377;
+            color: transparent;
+            background-clip: text !important;
+            background: radial-gradient(
+                    circle farthest-corner at 28% 100%,
+                    $yellow 0%,
+                    $yellow_to 10%,
+                    $orange 22%,
+                    $red 35%,
+                    transparent 65%
+                ),
+                linear-gradient(145deg, $blue 10%, $purple 70%);
+        }
+
+        .topIconPin {
+            color: #e60023;
+        }
+
+        .topIconTwit {
+            color: #179cf0;
+        }
+    }
+
+    .topCenter {
+        flex: 6;
+
+        .topList {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .topListItem {
+                margin: 0 25px;
+                font-size: 18px;
+                font-weight: 300;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    .topRight {
+        .topImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .topList {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .topListItem {
+                margin: 0 25px;
+                font-size: 18px;
+                font-weight: 300;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .topSearchIcon {
+            font-size: 18px;
+            color: #666;
+            cursor: pointer;
+        }
+    }
+}

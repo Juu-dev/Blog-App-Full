@@ -11,36 +11,35 @@ import Register from "./pages/Register/Register";
 import Settings from "./pages/Settings/Settings";
 import Single from "./pages/Single/Single";
 import Write from "./pages/Write/Write";
+import MyPosts from "./pages/MyPosts/MyPosts";
 
 function App() {
-    const { user } = useContext(Context);
+  const { user } = useContext(Context);
 
-    return (
-        <Router>
-            <TopBar />
-            <Routes>
-                <Route exact path="/" element={<HomePage />}></Route>
-                <Route path="/posts" element={<HomePage />}></Route>
-                <Route
-                    path="/register"
-                    element={user ? <HomePage /> : <Register />}
-                ></Route>
-                <Route
-                    path="/login"
-                    element={user ? <HomePage /> : <Login />}
-                ></Route>
-                <Route path="/post/:postId" element={<Single />}></Route>
-                <Route
-                    path="/write"
-                    element={user ? <Write /> : <Login />}
-                ></Route>
-                <Route
-                    path="/settings"
-                    element={user ? <Settings /> : <Login />}
-                ></Route>
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <TopBar />
+      <Routes>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="/posts" element={<HomePage />}></Route>
+        <Route
+          path="/register"
+          element={user ? <HomePage /> : <Register />}
+        ></Route>
+        <Route
+          path="/my-posts/:userId"
+          element={user ? <MyPosts /> : <Login />}
+        ></Route>
+        <Route path="/login" element={user ? <HomePage /> : <Login />}></Route>
+        <Route path="/post/:postId" element={<Single />}></Route>
+        <Route path="/write" element={user ? <Write /> : <Login />}></Route>
+        <Route
+          path="/settings"
+          element={user ? <Settings /> : <Login />}
+        ></Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

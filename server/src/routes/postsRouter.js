@@ -12,6 +12,9 @@ router.put("/:id", postsController.postUpdate);
 //DELETE POST
 router.delete("/:id", postsController.postDelete);
 
+//GET MY POSTS
+router.get("/my-posts/:user_id", postsController.postGetMyPosts);
+
 //GET POST
 router.get("/:id", postsController.postGet);
 

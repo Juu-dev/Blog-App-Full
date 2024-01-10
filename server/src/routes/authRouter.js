@@ -9,4 +9,7 @@ router.post("/register", authController.authRegister);
 //LOGIN
 router.post("/login", authController.authLogin);
 
+//LOGIN WITH GOOGLE
+router.post("/loginGoogle", authController.authLoginGoogle);
+
 module.exports = router;

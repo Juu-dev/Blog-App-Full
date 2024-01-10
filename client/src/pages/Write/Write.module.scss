@@ -1,65 +1,93 @@
 .write {
-    padding-top: 50px;
+  padding-top: 50px;
+  height: 70vh;
 
-    .writeImg {
-        margin-left: 150px;
-        width: 70vw;
-        height: 250px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
+  .writeImg {
+    margin-left: 150px;
+    // width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 
-    .writeForm {
-        position: relative;
+  .writeForm {
+    position: relative;
+    height: 100%;
 
-        .writeFormGroup {
-            margin-left: 150px;
-            display: flex;
-            align-items: center;
+    .writeFormGroup {
+      margin-left: 150px;
+      margin-right: 150px;
+      display: flex;
+      align-items: center;
 
-            .writeIcon {
-                width: 25px;
-                height: 25px;
-                font-size: 20px;
-                border: 1px solid;
-                border-radius: 50%;
-                color: rgb(129, 125, 125);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
+      .writeIcon {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        border: 1px solid;
+        border-radius: 50%;
+        color: rgb(129, 125, 125);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
 
-            .writeInput {
-                font-size: 30px;
-                border: none;
-                padding: 20px;
-                width: 70vw;
+      .writeInput {
+        font-size: 30px;
+        border: none;
+        padding: 20px;
+        // width: 70vw;
 
-                &::placeholder {
-                    color: rgb(189, 185, 185);
-                    font-weight: 400;
-                }
-
-                &:focus {
-                    outline-style: none;
-                }
-            }
+        &::placeholder {
+          color: rgb(189, 185, 185);
+          font-weight: 400;
         }
 
-        .writeSubmit {
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            color: white;
-            background-color: teal;
-            padding: 10px;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
+        &:focus {
+          outline-style: none;
         }
+      }
     }
+
+    .button_7 {
+      background-color: #0095ff;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+        sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.15385;
+      margin: 0;
+      outline: none;
+      padding: 8px 0.8em;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: #0077d9;
+      }
+
+      &:active {
+        background-color: #0064bd;
+        box-shadow: none;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+      }
+    }
+  }
 }

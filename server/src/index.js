@@ -28,6 +28,9 @@ app.use("/images", express.static(path.join(__dirname, "/public/images")));
 // Router init
 router(app);
 
+// Seed data
+database.seedData();
+
 app.listen(5000, () => {
-    console.log("Backend is running.");
+  console.log("Backend is running in port http://localhost:5000");
 });

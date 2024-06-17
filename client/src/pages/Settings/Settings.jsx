@@ -106,18 +106,18 @@ export default function Settings() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {/* <label>Password</label>
+          <label>Password</label>
           <input
             type="password"
             placeholder="Password"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          /> */}
+          />
           <button
             className={styles.settingsSubmitButton}
             type="submit"
-            // disabled={!password}
+            disabled={!password}
           >
             Update
           </button>
@@ -149,7 +149,6 @@ export default function Settings() {
                         )} */}
         </form>
       </div>
-      <Sidebar />
     </div>
   );
 }

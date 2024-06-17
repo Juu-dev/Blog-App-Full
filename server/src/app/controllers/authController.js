@@ -73,6 +73,10 @@ class AuthController {
       console.log("Logging in...");
       const { username, password } = req.body;
 
+      if (!username || !password) {
+        return res.status(400).json("Missing username or password!");
+      }
+
       // Tìm người dùng bằng username
       const user = await User.findOne({ username });
 

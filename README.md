@@ -6,43 +6,51 @@ I learned from a pro dev who named **Lama dev**.
 
 This is his youtube channel: (https://www.youtube.com/c/LamaDev)
 
+## How to run - Step by Step
+
+- BackEnd
+  - Open terminal and run command: `make build` to create docker container for mongodb
+  - Then run command: `npm i` and `npm start`
+- FrontEnd
+  - Open terminal and run command: `npm i` and `npm start`
+
 ## Several convention about how to folder/file named
 
--   FrontEnd:
+- FrontEnd:
 
-    -   Folder named by camelcase contain directly file .jsx and .scss. This folder has the same name as the file inside.
-    -   Folder named by lowercase is only contained folder
-    -   File .js and .scss in same folder must same name. They combine to form component of Blog
+  - Folder named by camelcase contain directly file .jsx and .scss. This folder has the same name as the file inside.
+  - Folder named by lowercase is only contained folder
+  - File .js and .scss in same folder must same name. They combine to form component of Blog
 
-    -   components: contain file with extension is .jsx and .scss
-    -   pages: contain file with extension is .jsx and .scss
+  - components: contain file with extension is .jsx and .scss
+  - pages: contain file with extension is .jsx and .scss
 
--   BackEnd:
+- BackEnd:
 
-    -   Folder named by lowercase is only contained folder
-    -   File in models folder named with first letter uppercase
-    -   Other files named by lowercase
+  - Folder named by lowercase is only contained folder
+  - File in models folder named with first letter uppercase
+  - Other files named by lowercase
 
-    -   Folder routes: file named by camelcase
-    -   Folder controllers: file named by camelcase
-    -   Folder models: file named with the first letter is uppercase
+  - Folder routes: file named by camelcase
+  - Folder controllers: file named by camelcase
+  - Folder models: file named with the first letter is uppercase
 
 ## Technologies and props
 
--   FrontEnd:
-    -   React.js
-    -   react-router-dom
-    -   Sass/Scss (module)
-    -   Axios
-    -   Web-vitals
--   BackEnd:
-    -   express (minimalist web framework for node)
-    -   mongoose (Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks)
-    -   nodemon (Automatically restarting the node application when file changes in the directory are detected)
-    -   multer (used for uploading files)
-    -   dotenv (Supports environment variable)
--   Database:
-    -   MongoDB
+- FrontEnd:
+  - React.js
+  - react-router-dom
+  - Sass/Scss (module)
+  - Axios
+  - Web-vitals
+- BackEnd:
+  - express (minimalist web framework for node)
+  - mongoose (Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks)
+  - nodemon (Automatically restarting the node application when file changes in the directory are detected)
+  - multer (used for uploading files)
+  - dotenv (Supports environment variable)
+- Database:
+  - MongoDB
 
 ## Structuring file/folder of project
 

@@ -6,7 +6,6 @@ import styles from "./HomePage.module.scss";
 
 import Header from "../../components/Header/Header";
 import Posts from "../../components/Posts/Posts";
-import SideBar from "../../components/SideBar/SideBar";
 
 export default function HomePage() {
   const [posts, setPosts] = useState([]);
@@ -25,7 +24,6 @@ export default function HomePage() {
       <Header />
       <div className={styles.home}>
         <Posts posts={posts} />
-        <SideBar />
       </div>
     </div>
   );

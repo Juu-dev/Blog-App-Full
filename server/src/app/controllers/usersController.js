@@ -66,6 +66,12 @@ class usersController {
       console.log(req.params.id);
 
       const user = await User.findById(req.params.id);
+
+      if (user.password !== "_google_")
+        user.profilePic = "http://localhost:5000/images/" + user.profilePic;
+
+      console.log(user);
+
       const { password, ...others } = user._doc;
 
       // log

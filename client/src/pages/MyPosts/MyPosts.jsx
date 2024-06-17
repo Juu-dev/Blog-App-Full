@@ -30,8 +30,7 @@ export default function MyPosts() {
   return (
     <div>
       <div className={styles.home}>
-        <Posts posts={posts} />
-        <SideBar />
+        {posts.length > 0 ? <Posts posts={posts} /> : <h2>No posts</h2>}
       </div>
     </div>
   );
